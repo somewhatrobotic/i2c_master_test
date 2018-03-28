@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<document>
+<!--The data in this file is primarily intended for consumption by Xilinx tools.
+The structure and the elements are likely to change over the next few releases.
+This means code written to parse this file will need to be revisited each subsequent release.-->
+<application name="pa" timeStamp="Tue Mar 27 20:32:20 2018">
+<section name="Project Information" visible="false">
+<property name="ProjectID" value="d548b4a6a5864160919872dab5730cd0" type="ProjectID"/>
+<property name="ProjectIteration" value="1" type="ProjectIteration"/>
+</section>
+<section name="PlanAhead Usage" visible="true">
+<item name="Project Data">
+<property name="SrcSetCount" value="1" type="SrcSetCount"/>
+<property name="ConstraintSetCount" value="1" type="ConstraintSetCount"/>
+<property name="DesignMode" value="RTL" type="DesignMode"/>
+<property name="SynthesisStrategy" value="Vivado Synthesis Defaults" type="SynthesisStrategy"/>
+<property name="ImplStrategy" value="Vivado Implementation Defaults" type="ImplStrategy"/>
+</item>
+<item name="Java Command Handlers">
+<property name="AddSources" value="2" type="JavaHandler"/>
+<property name="FileExit" value="1" type="JavaHandler"/>
+<property name="NewProject" value="1" type="JavaHandler"/>
+<property name="SimulationRelaunch" value="17" type="JavaHandler"/>
+<property name="SimulationRun" value="2" type="JavaHandler"/>
+<property name="WaveformSaveConfiguration" value="2" type="JavaHandler"/>
+</item>
+<item name="Gui Resources Info">
+<property name="FINISH, Finish" value="3" type="GuiResourceData"/>
+<property name="Main.v, 1, 145" value="1" type="GuiResourceData"/>
+<property name="Main.v, 100, 177" value="1" type="GuiResourceData"/>
+<property name="Main.v, 111, 181" value="1" type="GuiResourceData"/>
+<property name="Main.v, 139, 130" value="1" type="GuiResourceData"/>
+<property name="Main.v, 142, 60" value="1" type="GuiResourceData"/>
+<property name="Main.v, 187, 195" value="1" type="GuiResourceData"/>
+<property name="Main.v, 214, 199" value="1" type="GuiResourceData"/>
+<property name="Main.v, 216, 180" value="1" type="GuiResourceData"/>
+<property name="Main.v, 233, 126" value="1" type="GuiResourceData"/>
+<property name="Main.v, 244, 177" value="1" type="GuiResourceData"/>
+<property name="Main.v, 256, 210" value="1" type="GuiResourceData"/>
+<property name="Main.v, 28, 142" value="1" type="GuiResourceData"/>
+<property name="Main.v, 325, 105" value="1" type="GuiResourceData"/>
+<property name="Main.v, 34, 100" value="1" type="GuiResourceData"/>
+<property name="Main.v, 343, 111" value="1" type="GuiResourceData"/>
+<property name="Main.v, 37, 295" value="1" type="GuiResourceData"/>
+<property name="Main.v, 407, 45" value="1" type="GuiResourceData"/>
+<property name="Main.v, 54, 263" value="1" type="GuiResourceData"/>
+<property name="Main.v, 55, 232" value="1" type="GuiResourceData"/>
+<property name="Main.v, 60, 303" value="1" type="GuiResourceData"/>
+<property name="Main.v, 69, 196" value="1" type="GuiResourceData"/>
+<property name="Main.v, 70, 214" value="1" type="GuiResourceData"/>
+<property name="Main.v, 71, 317" value="1" type="GuiResourceData"/>
+<property name="Main.v, 74, 197" value="1" type="GuiResourceData"/>
+<property name="Main.v, 76, 99, true, false, false, false, false" value="1" type="GuiResourceData"/>
+<property name="Main.v, 88, 196" value="1" type="GuiResourceData"/>
+<property name="Main.v, 93, 196" value="1" type="GuiResourceData"/>
+<property name="Main.v, 94, 199" value="1" type="GuiResourceData"/>
+<property name="NEXT, Next " value="6" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_HDL_AND_NETLIST_FILES_OR_DIRECTORIES, Add or create design sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES, Add or create simulation sources" value="1" type="GuiResourceData"/>
+<property name="PAResourceAtoD.CmdMsgDialog_OK, OK" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RELAUNCH, simulation_relaunch" value="17" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_SIMULATION_RUN_BEHAVIORAL, Run Behavioral Simulation" value="2" type="GuiResourceData"/>
+<property name="PAResourceCommand.PACommandNames_VIEW_JOURNAL_FILE, Open Journal File" value="1" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Design Sources, Main (Main.v" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1, master_tb (master_tb.v" value="4" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, [root, Simulation Sources, sim_1], 4" value="3" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Project Manager, Add Sources], 2, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, [, Simulation, Run Simulation], 11, false" value="2" type="GuiResourceData"/>
+<property name="PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, Create New Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_EXPORT, Export" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_FILE, File" value="2" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_FILE, Open Recent File" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, Open Recent Project" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, [, Vivado Commands, launch_simulation. , [USF-XSim 62] 'compile' step failed with error(s" value="1" type="GuiResourceData"/>
+<property name="PAResourceItoN.MsgView_INFORMATION_MESSAGES, (String" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.PAViews_PROJECT_SUMMARY, Project Summary" value="1" type="GuiResourceData"/>
+<property name="PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, i2c_master2" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationObjectsPanel_SIMULATION_OBJECTS_TREE_TABLE, state[6:0] ; 02 ; Array, 6, state[6:0], 0, true" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SimulationScopesPanel_SIMULATION_SCOPES_TREE_TABLE, uut ; Main ; Verilog Module, 1, uut, 0, false" value="1" type="GuiResourceData"/>
+<property name="PAResourceQtoS.SrcChooserPanel_ADD_HDL_AND_NETLIST_FILES_TO_YOUR_PROJECT, Add Files" value="2" type="GuiResourceData"/>
+<property name="PAResourceTtoZ.TaskBanner_CLOSE, (String" value="1" type="GuiResourceData"/>
+<property name="RDIResource.BaseDialog_OK, OK" value="3" type="GuiResourceData"/>
+<property name="RDIResource.CommandsInput_TYPE_TCL_COMMAND_HERE, tclapp::xilinx::designutils::write_ip_integrator_testbench -addToProject" value="1" type="GuiResourceData"/>
+<property name="RDIResource.ProgressDialog_CANCEL, Cancel" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 113, 203" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 113, 203, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 131, 268" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 134, 355" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 140, -67" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 146, 99" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 148, 351, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 271, -116" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 271, -26" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 48, 108" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 49, 113, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 57, 346" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 68, 255" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 69, -42" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, 75, 100, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.RDIViews_WAVEFORM_VIEWER, Untitled 1*" value="1" type="GuiResourceData"/>
+<property name="RDIResource.TclConsoleView_TCL_CONSOLE_CODE_EDITOR, 132, 91" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, PERIOD[31:0]], 10" value="6" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, PERIOD[31:0]], 10, true" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, PERIOD[31:0]], 10, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, addr[6:0]], 3, true, false, false, false, true, false" value="1" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state[6:0]], 10" value="3" type="GuiResourceData"/>
+<property name="RDIResource.WaveformNameTree_WAVEFORM_NAME_TREE, [true, state[6:0]], 9" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 104, 165" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 104, 194" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 116, 211" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 116, 223" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 125, 204" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 132, 218" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 157, 77" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 28, 230" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 49, 262" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 50, 178" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 50, 92" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 54, 211" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 61, 231" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 70, 57" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 82, 143" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 91, 247" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 92, 252" value="1" type="GuiResourceData"/>
+<property name="master_tb.v, 99, 184" value="1" type="GuiResourceData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="114" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="85" type="TclMode"/>
+</item>
+</section>
+</application>
+</document>
