@@ -24,12 +24,19 @@ module Main(
     input wire clk,
     input wire reset_n,
     input wire ena,
+    input wire rw,
     input wire[6:0] addr,
     input wire[7:0] data_wr, data_rd,
-    input wire ack_error,
-    input wire busy,
-    output reg SCL, SDA
+    output wire ack_error,
+    output wire busy, 
+    output reg SCL,
+    inout SDA
 );
+
+//Registors for storing output and input data
+reg SDA_o, SDA_i;
+//as
+assign SDA = rw ? SDA_o : 1'bz;
 
 //Request = ena, addr, data_wr, data_rd, ack_error, busy
 //Slave Address
@@ -58,7 +65,7 @@ begin
     if(reset_n == 1'b1)
     begin
         next_state <= RDY;
-        SDA <= 1'b1;
+        SDA_o <= 1'b1;
         SCL <= 1'b1;
     end else begin
     state <= next_state;
@@ -68,29 +75,35 @@ begin
                     if(ena == 1'b1)
                         begin
                         next_state = START;
-                        SDA <= 1'b1;
+                        SDA_o <= 1'b1;
                         end    
                     else 
                         next_state = RDY; 
                   end
         START   : begin 
-                    SDA <= 1'b0; 
+                    SDA_o <= 1'b0; 
                     next_state <= ADR;
                     bit_cnt <= 3'b110;
                   end
         ADR     : begin //Sequence for sending slave address
-                     SDA <= addr[bit_cnt];
-                     if(bit_cnt == 0) next_state <= ACK;
+                     SDA_o <= addr[bit_cnt];
+                     if(bit_cnt == 0) begin
+                     next_state <= ACK;
+                     end
                      else bit_cnt <= bit_cnt - 1;
                   end     
         ACK     : begin
-                    next_state <= WRITE;
+                    if(SDA)//NACK
+                        next_state <= STOP;
+                    else //ACK
+                        next_state <= rw ? WRITE : READ;                       
+                    
                     bit_cnt <= 3'b111;
                     if(RWACK == 1'b1)
                         next_state <= STOP;
                   end
         WRITE   : begin //Sequence for sending data
-                       SDA <= data_wr[bit_cnt];
+                       SDA_o <= data_wr[bit_cnt];
                        if(bit_cnt == 0)
                        begin
                             next_state <= ACK;
@@ -98,10 +111,17 @@ begin
                        end
                        else bit_cnt <= bit_cnt - 1;
                    end
-        READ    : begin //Sequence for sending 
+        READ    : begin //Sequence for reading input
+                    SDA_i <= SDA;
+                    if(bit_cnt == 0)
+                    begin
+                        next_state <= ACK;
+                        RWACK <= 1;
+                    end
+                    else bit_cnt <= bit_cnt -1;
                  end
         STOP    : begin  
-                    SDA = 1'b1;
+                    SDA_o = 1'b1;
                     next_state <= RDY;
                   end
        endcase 
